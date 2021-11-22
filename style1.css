@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: animate 60s ease-in-out -2s infinite alternate-reverse; 
+}
+@keyframes animate{
+    0%{background-image:url('img/1266901.jpg');}
+    20%{background-image:url('img/1386096.jpg');}
+    40%{background-image:url('img/309832.jpg');}
+    60%{background-image:url('img/gt.jpg');}
+    80%{background-image:url('img/idk.jpg');}
+    100%{background-image:url('img/Tm.jpg');}
+
+}
+
+@keyframes changetext{
+    0%{content:"Hawa Mahal";}
+    20%{content:"Kovalam";}
+    40%{content:"Red Fort";}
+    60%{content:"Golden Temple";}
+    80%{content:"Poojari Fish Land";}
+    100%{content:"Taj Mahal";}
+}
+
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.4);
+    color: white; display: flex; justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+} 
+nav .menu{
+    width: 40%; 
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+nav .menu a {
+    color: white;
+    width: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease-in-out .5s;
+}
+nav .menu a:hover{
+    color: #00b894;
+}
+
+nav .menu a:first-child{
+    color: #00b894;
+}
+nav .menu a:first-child:hover{
+    color: #fff
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* color:rgb(182, 31, 74); */
+    color: white;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0px 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section .btn1{
+    background: #fff;
+    color:#000;
+    margin: auto;
+    transition: ease-in-out 0.5s;
+}
+.btn1:hover{
+    color: white;
+    background: orangered;
+}
+section .btn2{
+    background: #00b894;
+    color: white;
+    margin: 40px;
+    transition: ease-in-out 0.5s;
+}
+.btn2:hover{
+    color: rgb(116, 102, 102);
+    background: black;
+}
+.Change_Content:after{
+    content: '';
+    animation: changetext 60s infinite -2s ease-in-out alternate-reverse;
+    color: #00b894;
+    font-family: 'Oswald', cursive;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 3rem;
+}
